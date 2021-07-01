@@ -1,0 +1,43 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(121, 121, 121, 0.2);
+
+  /*맨 아래 고정*/
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box; /*아이콘 사라지지 않게*/
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  display: block;
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px; /*원만들기 > width의 반*/
+
+  /*숫자 1 가운데 오게*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: 600;
+  font-size: 5px;
+
+  /*아이콘 위에 오게*/
+  position: absolute; /*container(nav__link)에 position:relative*/
+  left: 15px;
+  bottom: 15px;
+}
