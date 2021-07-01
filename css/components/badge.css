@@ -1,0 +1,16 @@
+.badge {
+  display: block;
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px; /*원만들기 > width의 반*/
+
+  /*숫자 1 가운데 오게*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: 600;
+  font-size: 5px;
+}

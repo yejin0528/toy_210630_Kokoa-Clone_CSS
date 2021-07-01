@@ -7,9 +7,11 @@
 @import "components/screen-head.css";
 @import "components/friends.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /*Screens*/
 @import "screens/login.css";
+@import "screens/find.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -19,4 +21,8 @@ body {
   height: 800vh;
 
   color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
