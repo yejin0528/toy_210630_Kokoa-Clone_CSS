@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chats - Kokoa Clone</title>
+    <title>Settings - Kokoa Clone</title>
   </head>
   <body>
     <!--상단바-->
@@ -27,43 +27,43 @@
     </div>
 
     <!--헤더-->
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span
-          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
-        ></span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html"> <i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
       </div>
     </header>
 
     <!--main content-->
     <main class="main-screen">
-      <!--1. -->
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar"
-              src="https://avatars.githubusercontent.com/u/3612017"
-            />
-
-            <div class="user-component__text">
-              <h4 class="user-component__title">Nicolas</h4>
-              <h6 class="user-component__subtitle">
-                Please check My Kokoa Account Info
-              </h6>
-            </div>
+      <ul class="settings-list">
+        <li class="setting__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-
-          <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
-            <span class="badge">1</span>
+          <div class="setting__setting-column"></div>
+        </li>
+        <li class="setting__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>Kakao Lab</span>
           </div>
-        </div>
-      </a>
+          <div class="setting__setting-column"></div>
+        </li>
+        <li class="setting__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="setting__setting-column">Latest Version</div>
+        </li>
+      </ul>
     </main>
 
     <!--하단바-->
@@ -79,7 +79,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="badge nav__notification">1</span>
-            <i class="fas fa-comment fa-2x"></i
+            <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
 
