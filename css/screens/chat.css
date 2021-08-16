@@ -1,6 +1,22 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 1000vh;
+  width: 100%;
+  height: 225vh;
+  background-color: whitesmoke;
+}
+
+/*chat_kiki*/
+.chat-screen-kiki {
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxOTA3MjZfMzQg/MDAxNTY0MTM4OTQ0Mzc2.TMKOQPCXlyvB287VjxO6eJ4-zb3ukujpb05aD03ZnPMg.ETwNDrcbCbVKYfKaw55usWAxu43sNrUKnLVc7bvD2ZIg.JPEG.oipk100/IMG_6058.jpg?type=w800");
+}
+
+/*chat_ponyo*/
+.chat-screen-ponyo {
+  background-image: url("http://file2.instiz.net/data/cached_img/upload/2016/07/02/13/39e133f4a361ced48558c31c700e9bbe.jpg");
+}
+
+/*chat_shizuku*/
+.chat_shizuku {
+  background-image: url("https://i.pinimg.com/originals/d6/03/21/d60321b34c808696a2336732d89c2a0b.jpg");
 }
 
 #chat-screen #status-bar {
@@ -17,7 +33,6 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: #abc1d1;
 }
 
 .main-chat {

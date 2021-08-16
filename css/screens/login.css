@@ -38,7 +38,7 @@
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yello);
+  background-color: var(--blue);
   cursor: pointer;
   padding: 20px 0px;
   margin-bottom: 10px;
@@ -51,7 +51,7 @@
 }
 
 #login-form input:focus {
-  border-color: var(--yello);
+  border-color: var(--blue);
 }
 
 #login-form a {
