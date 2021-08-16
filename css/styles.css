@@ -10,7 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-raws.css";
 @import "components/alt-screen-header.css";
-
+@import "components/no-mobile.css";
 /*Screens*/
 @import "screens/login.css";
 @import "screens/find.css";
@@ -23,6 +23,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   margin-bottom: 20px;
+  width: 100vw;
   height: 150vh;
 
   color: #2e363e;

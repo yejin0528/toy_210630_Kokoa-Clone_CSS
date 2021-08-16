@@ -36,13 +36,20 @@
 
     <!-- button-->
     <form action="friends.html" method="GET" id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+      <input type="email" placeholder="Email or phone number" required />
+      <input type="password" placeholder="Password" required />
       <input type="submit" value="Log in" />
       <input type="submit" value="Sign up" />
 
       <a href="#">Find Kokoa Account or Password</a>
     </form>
+
+    <!--no-mobile-->
+    <div id="no-mobile">
+      <img src="img/no-mobile-img.png" alt="" />
+      <span>Your screen is too big</span>
+      <img src="img/no-mobile-img.png" alt="" />
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

@@ -1,0 +1,25 @@
+#no-mobile {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#no-mobile img {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 645px) {
+  /*스크린 645px까지*/
+  #no-mobile {
+    display: none;
+  }
+}

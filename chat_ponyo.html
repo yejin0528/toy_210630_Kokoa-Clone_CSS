@@ -43,10 +43,20 @@
     <!--main content-->
     <main class="main-screen main-chat">
       <div class="chat__timestamp">
-        <span>2021년 7월 2일 금요일</span>
+        <span>Monday, August 16, 2021</span>
       </div>
 
-      <!--발신 메세지-->
+      <!-- 발신 메세지-->
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"> Hello Ponyo?</span>
+            <span class="message__time">00:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!--수신 메세지-->
       <div class="message-row">
         <img
           src="https://mblogthumb-phinf.pstatic.net/MjAyMDA0MDdfMzEg/MDAxNTg2MTkxOTI5NTA5.Y-6h4T5FXLwbTG8Ri4z4AGOeCVxHJ7xYBV73SK-gTwYg.0cIgvQjh7DJeDPW6FQAX1waF64WdDrChsKV7QOXNMZUg.JPEG.yejinlisa20/IMG_8364.JPG?type=w800"
@@ -54,18 +64,18 @@
         <div class="message-row__content">
           <div class="message__author">Ponyo</div>
           <div class="message__info">
-            <span class="message__bubble"> Hi!</span>
-            <span class="message__time">11:25</span>
+            <span class="message__bubble"> It's been a while!</span>
+            <span class="message__time">00:00</span>
           </div>
         </div>
       </div>
 
-      <!-- 수신 메세지-->
+      <!-- 발신 메세지-->
       <div class="message-row message-row--own">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble"> Hi! Nice to meet you</span>
-            <span class="message__time">11:27</span>
+            <span class="message__bubble"> Yeh, how are you going?</span>
+            <span class="message__time">00:00</span>
           </div>
         </div>
       </div>
@@ -85,6 +95,13 @@
         </button>
       </div>
     </form>
+
+    <!--no-mobile-->
+    <div id="no-mobile">
+      <img src="img/no-mobile-img.png" alt="" />
+      <span>Your screen is too big</span>
+      <img src="img/no-mobile-img.png" alt="" />
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

@@ -1,7 +1,8 @@
 #chat-screen {
   width: 100%;
-  height: 225vh;
+  height: 220vh;
   background-color: whitesmoke;
+  background-size: cover;
 }
 
 /*chat_kiki*/
@@ -35,8 +36,24 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat {
   margin-top: 125px;
+  animation: fadeIn 0.5s linear;
 }
 
 .chat__timestamp {
@@ -101,7 +118,7 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yello);
+  background-color: var(--blue);
   border-top-right-radius: 0px;
   border-top-left-radius: 10px;
   margin-left: 5px;
@@ -121,6 +138,8 @@
 }
 */
 
+/****자판****/
+
 .reply {
   position: fixed;
   bottom: 0;
@@ -133,6 +152,7 @@
   align-items: center;
 
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column {
@@ -153,6 +173,8 @@
   border: var(--main-border);
   border-radius: 20px;
   padding-left: 10px;
+
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -185,4 +207,26 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  transform: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  /*reply 내부 어떤 요소든 focus 되어 있다면*/
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 90vw;
+  transform: translateX(-12%) translateY(-70px);
+}
+
+.reply:focus-within {
+  transform: translateY(70px);
 }
